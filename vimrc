@@ -96,7 +96,12 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'bitc/vim-bad-whitespace'
 Plugin 'fisadev/vim-isort'
 Plugin 'psf/black'
+Plugin 'LucHermitte/lh-vim-lib'
+Plugin 'LucHermitte/local_vimrc'
 call vundle#end()
+
+"Local vimrc files
+call lh#local_vimrc#munge('whitelist', $HOME.'/code')
 
 "Start filetype plugin
 filetype plugin indent on
