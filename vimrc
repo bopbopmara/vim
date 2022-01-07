@@ -122,11 +122,11 @@ let g:syntastic_check_on_wq = 0
 
 "Isort recommended settings
 let g:vim_isort_python_version = 'python3'
-autocmd BufWritePre *.py execute ':Isort'
+"autocmd BufWritePre *.py execute ':Isort'
 
 "Black
 let g:black_virtualenv='/usr/local/'
-autocmd BufWritePre *.py execute ':Black'
+"autocmd BufWritePre *.py execute ':Black'
 
 "Highlight the column after max line length
 highlight ColorColumn ctermbg=grey guibg=grey
